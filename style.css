@@ -1,0 +1,17 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBzY2VuZXJ5fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+
+}
+.nav{
+    text-align:center;
+}
+.navbar{
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    min-height: 30vh;
+    border:2px solid black;
+    border-radius:10px;
+    margin:0px 150px;
+    padding:15px 100px;
+}
