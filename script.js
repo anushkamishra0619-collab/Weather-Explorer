@@ -39,6 +39,3 @@ async function getWeather() {
         errorElement.textContent = error.message;
     }
 }
-
-
-

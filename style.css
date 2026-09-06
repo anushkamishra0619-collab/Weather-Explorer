@@ -15,10 +15,33 @@ body{
     border-radius:10px;
     margin:10px 150px;
     padding:15px 100px;
-    background-color:rgb(24, 184, 208);
+    background-color:rgb(125, 143, 180);
     border-color:white;
     height:500px;
+    animation: blinkBorder 1s infinite;
+}
+.navbar input{
+    width:50%;
 }
 .navbar button{
     background-color:blue;
+}
+@keyframes blinkBorder{
+    0%{
+        border-color:cyan;
+        box-shadow:0 0 5px cyan;
+    }
+    50%{
+        border-color:transparent;
+        box-shadow:none;
+    }
+    100%{
+        border-color:cyan;
+        box-shadow:0 0 20px cyan;
+    }
+}
+.weatherresult{
+    display:flex;
+    justify-content:center;
+    margin:0 50px;
 }
