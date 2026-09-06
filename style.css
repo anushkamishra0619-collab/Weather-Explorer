@@ -1,30 +1,53 @@
-body{
-    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBzY2VuZXJ5fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+* {
+    box-sizing: border-box;
+}
 
+html,
+body {
+    min-height: 100%;
+    margin: 0;
 }
-.nav{
-    text-align:center;
+
+body {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBzY2VuZXJ5fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
 }
-.navbar{
-    display:flex;
-    justify-content:center;
-    flex-direction:row;
-    align-items:flex-start;
+
+.nav {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
     min-height: 30vh;
-    border:2px solid black;
-    border-radius:10px;
-    margin:10px 150px;
-    padding:15px 100px;
-    background-color:rgb(125, 143, 180);
-    border-color:white;
-    height:500px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px 150px;
+    padding: 15px 30px;
+    background-color: rgb(143, 212, 222);
     animation: blinkBorder 1s infinite;
+}
+
+.search-controls {
+    display: flex;
+    justify-content: center;
 }
 .navbar input{
     width:50%;
+    border-right:none;
 }
-.navbar button{
-    background-color:blue;
+
+.navbar button {
+    background-color: blue;
+    cursor:pointer;
+}
+
+.weatherresult {
+    width: 100%;
 }
 @keyframes blinkBorder{
     0%{
@@ -39,9 +62,5 @@ body{
         border-color:cyan;
         box-shadow:0 0 20px cyan;
     }
-}
-.weatherresult{
-    display:flex;
-    justify-content:center;
-    margin:0 50px;
+     
 }
