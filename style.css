@@ -39,11 +39,19 @@ body {
 .navbar input{
     width:50%;
     border-right:none;
+    height:40px;
+    border-radius:10px;
+}
+input::placeholder{
+    font-size: 20px;
+
 }
 
 .navbar button {
     background-color: blue;
     cursor:pointer;
+    color:white;
+    border-radius:10px;
 }
 
 .weatherresult {
